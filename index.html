@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memezilla</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white flex flex-col items-center justify-center">
+
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const App = () => {
+      return (
+        <div className="min-h-screen p-6 space-y-12 text-center">
+          {/* Hero Section */}
+          <section>
+            <h1 className="text-5xl font-extrabold mb-4">Memezilla - When Memes Unite!</h1>
+            <p className="text-lg mb-6">The ultimate meme fusion is here. Buy $MZLA now on Solana!</p>
+            <div className="space-x-4">
+              <a href="https://www.solscan.io/token/YourTokenAddress" target="_blank" className="bg-green-500 px-4 py-2 rounded">Buy on Solana</a>
+              <a href="https://www.dexscreener.com/solana/YourTokenPair" target="_blank" className="bg-yellow-500 px-4 py-2 rounded">View Chart</a>
+              <a href="https://t.me/MemezillaNews" target="_blank" className="bg-purple-500 px-4 py-2 rounded">Join Telegram</a>
+              <a href="https://x.com/MemezillaHQ" target="_blank" className="bg-blue-500 px-4 py-2 rounded">Follow on X</a>
+            </div>
+          </section>
+
+          {/* Characters Section */}
+          <section>
+            <h2 className="text-3xl font-bold mb-6">Meet The Meme Masters</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-black">
+              <div className="bg-white p-4 rounded shadow-lg"><h3 className="text-xl font-bold">Shiba</h3><p>The Brain</p></div>
+              <div className="bg-white p-4 rounded shadow-lg"><h3 className="text-xl font-bold">Doge</h3><p>The Cool</p></div>
+              <div className="bg-white p-4 rounded shadow-lg"><h3 className="text-xl font-bold">Pepe</h3><p>The Meme King</p></div>
+              <div className="bg-white p-4 rounded shadow-lg"><h3 className="text-xl font-bold">Ploki</h3><p>The Chaos Coder</p></div>
+            </div>
+          </section>
+
+          {/* Roadmap Section */}
+          <section>
+            <h2 className="text-3xl font-bold mb-4">Memezilla Roadmap</h2>
+            <ul className="space-y-2">
+              <li>🚀 Initial Launch on Solana</li>
+              <li>🃏 Meme NFT Cards Coming Soon</li>
+              <li>🎮 MemeWars Game Incoming</li>
+              <li>🌐 Entering the MemeMetaverse</li>
+            </ul>
+          </section>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
